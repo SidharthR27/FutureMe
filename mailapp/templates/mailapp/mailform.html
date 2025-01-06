@@ -1,0 +1,58 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Write to your future</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mailapp/mailform.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <section id="main">
+    <h1>Write a Letter to Your Future Self</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>Please enter you mobile number if you selected whatsapp</p>
+        <button type="submit" id="submit-btn">Send</button>
+    </form>
+    </section>
+      <section id="help-section">
+    <h1>Why you should write to yourself</h1>
+    <h3>❤️ Reliving memories in vivid detail</h3>
+    <h3>📈 Acknowledging growth & achievements</h3>
+    <h3>✅ Setting goals for the future</h3>
+    <h3>😌 Decluttering your mind to find some headspace</h3>
+    <p>
+        
+    </p>
+    </section>
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+{% comment %} <script>
+    const whatsappCheckbox = document.querySelector('#id_send_whatsapp');
+    const mobileField = document.querySelector('#mobile-field');
+
+    whatsappCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            mobileField.style.display = 'block';
+        } else {
+            mobileField.style.display = 'none';
+        }
+    });
+</script> {% endcomment %}

@@ -1,0 +1,23 @@
+body {
+    background-image: url(pattern-randomized.png);
+
+    font-family: "Roboto", serif;
+    text-align: left;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* #main {
+    
+} */
+
+#submit-btn {
+    display: block;
+    margin: 0 auto;
+  
+}
