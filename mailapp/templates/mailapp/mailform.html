@@ -29,7 +29,7 @@
 
 
 
-    <section id="help-section">
+  <section id="help-section">
       <img id="self-letter-img" src="{% static 'mailapp/self_letter.png' %}">
     <h1 id="help-heading">Why you should write to yourself</h1>
     <h4>❤️ Reliving memories in vivid detail</h4>
@@ -37,7 +37,13 @@
     <h4>✅ Setting goals for the future</h4>
     <h4>😌 Decluttering your mind to find some headspace</h4>
 
-    </section>
+    </section> 
+
+
+
+
+    <h1 id="sample_heading">Still confused? Here's a sample letter for you..</h1>
+    <img id = "heart-img" src="{% static 'mailapp/heart.png' %}">
 
     <div id="sample-letter" style="font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
       <h2 style="color: #333; text-align: center;">A Love Note from Your Past Self 💌</h2>
@@ -67,23 +73,7 @@
 
 
 
-
+  <script src="{% static 'mailapp/script.js' %}"></script>
   </body>
 </html>
 
-
-
-
-
-{% comment %} <script>
-    const whatsappCheckbox = document.querySelector('#id_send_whatsapp');
-    const mobileField = document.querySelector('#mobile-field');
-
-    whatsappCheckbox.addEventListener('change', function() {
-        if (this.checked) {
-            mobileField.style.display = 'block';
-        } else {
-            mobileField.style.display = 'none';
-        }
-    });
-</script> {% endcomment %}
