@@ -18,11 +18,12 @@
 
 
     <section id="main">
-    <h1 id="main-heading">Write a Letter to Your Future Self</h1>
+    <h1 id="main-heading">Write a Letter to Next Year Yourself</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <h5>Please make sure you enter whatsapp number if you selected whatsapp message(optional)</h5>
+        <h5>Please make sure you enter correct whatsapp number if you opted whatsapp message(optional).</h5>
+        <h5>We will deliver this letter safely to you on next New Year.</h5>
         <button type="submit" id="submit-btn">Send</button>
     </form>
     </section>
@@ -76,4 +77,5 @@
   <script src="{% static 'mailapp/script.js' %}"></script>
   </body>
 </html>
+
 

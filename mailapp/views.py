@@ -13,7 +13,6 @@ def mailform(request):
     if request.method == "POST":
         form = FutureMailForm(request.POST)
         if form.is_valid():
-            # print(form)
             form.save()
             return redirect('mailapp-success')  # Redirect after saving
     else:
