@@ -2,37 +2,68 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write to your future</title>
 
     <link rel="stylesheet" type="text/css" href="{% static 'mailapp/mailform.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
   </head>
   <body>
 
 
     <section id="main">
-    <h1>Write a Letter to Your Future Self</h1>
+    <h1 id="main-heading">Write a Letter to Your Future Self</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <p>Please enter you mobile number if you selected whatsapp</p>
+        <h5>Please make sure you enter whatsapp number if you selected whatsapp message(optional)</h5>
         <button type="submit" id="submit-btn">Send</button>
     </form>
     </section>
-      <section id="help-section">
-    <h1>Why you should write to yourself</h1>
-    <h3>❤️ Reliving memories in vivid detail</h3>
-    <h3>📈 Acknowledging growth & achievements</h3>
-    <h3>✅ Setting goals for the future</h3>
-    <h3>😌 Decluttering your mind to find some headspace</h3>
-    <p>
-        
-    </p>
+
+
+
+    <section id="help-section">
+      <img id="self-letter-img" src="{% static 'mailapp/self_letter.png' %}">
+    <h1 id="help-heading">Why you should write to yourself</h1>
+    <h4>❤️ Reliving memories in vivid detail</h4>
+    <h4>📈 Acknowledging growth & achievements</h4>
+    <h4>✅ Setting goals for the future</h4>
+    <h4>😌 Decluttering your mind to find some headspace</h4>
+
     </section>
+
+    <div id="sample-letter" style="font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+      <h2 style="color: #333; text-align: center;">A Love Note from Your Past Self 💌</h2>
+      <p>Hey Future Me,</p>
+  
+      <p>How's my favorite person doing? (Spoiler alert: It's you!) 🥰 I hope life's treating you like the absolute rockstar you are. Remember, you've survived every bad day, conquered every challenge, and come out stronger—and look at you now, thriving and fabulous!</p>
+  
+      <p>Let's take a moment to appreciate all the little things that have brought us here. Remember when you almost gave up on that project because it felt impossible? Well, jokes on you—because <strong>YOU DID IT</strong>. Go ahead, give yourself a high-five. 🖐️ No one's watching (I hope).</p>
+  
+      <p>Oh, and if things feel tough right now, let me remind you of one simple truth: <strong>you've got this.</strong> Like, seriously, you've got “main character energy.” Walk into every room like you own the place—because, let's face it, you kinda do. 😉</p>
+  
+      <p>Lastly, here's a little pep talk:</p>
+      <ul>
+          <li>Laugh at the small stuff—it's not worth the stress wrinkles.</li>
+          <li>Chase your dreams, no matter how wild or silly they seem.</li>
+          <li>Hug the people you love, often and tightly (except your cat—boundaries are important).</li>
+      </ul>
+  
+      <p>Now, go grab life by the horns and show it who's boss. Remember, Future Me, I'm rooting for you. Always. And if you ever forget how amazing you are, just reread this letter.</p>
+  
+      <p style="font-style: italic;">With love, admiration, and a little smirk,<br>
+      Past You ❤️</p>
+  
+      <p>P.S. Treat yourself to dessert. You deserve it, you gorgeous thing. 😘</p>
+  </div>
+  
 
 
 

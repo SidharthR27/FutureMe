@@ -1,23 +1,105 @@
 body {
     background-image: url(pattern-randomized.png);
-
+    background-image: url(subtle-prism.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: "Roboto", serif;
     text-align: left;
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 
+#main-heading {
+    font-size: 34px;
+    color: #112D4E;
+}
 
-/* #main {
-    
-} */
+label {
+    font-size: 20px;
+    color: rgb(17, 45, 78);
+}
+#main {
+    background-color: #e1f474;
+    background-color: #97c8e7;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: rgba(129, 129, 129, 0.3) 0px 19px 38px, rgba(136, 135, 135, 0.22) 0px 15px 12px;
+}
+
+input {
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    color: rgb(17, 45, 78);
+    padding: 2px;
+    outline: none;
+    border: solid rgb(17, 45, 78) 1px;
+    border-radius: 4px;
+}
+
+textarea {
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    color: rgb(17, 45, 78);
+    padding: 2px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
 
 #submit-btn {
     display: block;
     margin: 0 auto;
-  
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#submit-btn:active {
+    background-color: orange;
+}
+
+p {
+    margin-top: 24px;
+}
+
+h5 {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#help-section {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: rgb(177, 245, 207);
+    border-radius: 10px;
+
+
+}
+
+#self-letter-img {
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+#help-heading {
+    font-size: 28px;
+    color: orange;
+    color: rgb(9, 62, 33);
+    margin-top: 10px;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    margin-block: 10px;
 }
