@@ -1,7 +1,9 @@
 <h1>Hello</h1>
 
-{% for object in objects %}
 <ol>
+{% for object in objects %}
+
 <li> {{object.name}} {{object.email}} {{object.message}}</li>
-</ol>
+
 {% endfor %}
+</ol>
