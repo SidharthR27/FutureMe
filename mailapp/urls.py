@@ -3,7 +3,9 @@ from . import views
 
 
 urlpatterns = [
-    path('',  views.index, name='mailapp-index'),
-    path('mailform/',  views.mailform, name='mailapp-mailform'),
+    path('password123001/',  views.index, name='mailapp-index'),
+    path('',  views.mailform, name='mailapp-mailform'),
+    path('success/', views.mailsuccess, name='mailapp-success'),
 
 ]
+

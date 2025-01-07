@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .container img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static "mailapp/hug.jpg" %}" alt="Success" />
+        <h1>Success!</h1>
+        <p>Thank you for writing a letter to your future self. We've got it safe and sound, ready to deliver when the time comes!</p>
+        <p>Go ahead and take a moment to celebrate—you're amazing! 🎉 and very Happy New Year❤️May all your dreams come true this year😘</p>
+        <a href="/" class="button">Write Another Letter</a>
+    </div>
+</body>
+</html>

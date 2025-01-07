@@ -15,7 +15,10 @@ def mailform(request):
         if form.is_valid():
             # print(form)
             form.save()
-            return redirect('mailapp-index')  # Redirect after saving
+            return redirect('mailapp-success')  # Redirect after saving
     else:
         form = FutureMailForm()
     return render(request, 'mailapp/mailform.html', {'form': form})
+
+def mailsuccess(request):
+    return render(request, 'mailapp/success.html')
