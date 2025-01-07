@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
 from .forms import FutureMailForm
+from .models import *
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'mailapp/index.html')
+    objects = FutureMail.objects.all()
+    return render(request, 'mailapp/index.html', {"objects": objects})
 
 
 def mailform(request):
