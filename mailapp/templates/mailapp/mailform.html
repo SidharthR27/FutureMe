@@ -6,7 +6,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write to your future</title>
+    <title>Write to your future 💌</title>
 
     <link rel="stylesheet" type="text/css" href="{% static 'mailapp/mailform.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 
 
     <section id="main">
-    <h1 id="main-heading">Write a Letter to Next Year Yourself</h1>
+    <h1 id="main-heading">Write a Letter to Next Year Yourself 💌</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
@@ -46,7 +46,7 @@
     <h1 id="sample_heading">Still confused? Here's a sample letter for you..</h1>
     <img id = "heart-img" src="{% static 'mailapp/heart.png' %}">
 
-    <div id="sample-letter" style="font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+    <div id="sample-letter" style="font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 12px; background-color: #f9f9f9;">
       <h2 style="color: #333; text-align: center;">A Love Note from Your Past Self 💌</h2>
       <p>Hey Future Me,</p>
   
@@ -77,5 +77,3 @@
   <script src="{% static 'mailapp/script.js' %}"></script>
   </body>
 </html>
-
-

@@ -93,7 +93,7 @@ img {
 #self-letter-img {
     width: 90%;
     max-width: 400px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #help-heading {
@@ -115,7 +115,7 @@ img {
 
 h4{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     margin-block: 10px;
 }
 
@@ -135,6 +135,10 @@ h4{
 
     #sample-letter {
         padding: 0px;
+    }
+    #main {
+        padding-inline: 10px;
+        max-width: 95%;
     }
 
 
